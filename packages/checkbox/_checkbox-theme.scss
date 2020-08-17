@@ -73,10 +73,9 @@ $light-theme: (
     )
   );
 
-  @include shadow-dom.host-aware(
-    selector.append(&, '[checked]'),
-    selector.append(&, '[indeterminate]')
-  ) {
+    // selector.append(&, ':not([disabled])[checked]'),
+    // selector.append(&, ':not([disabled])[indeterminate]')
+  @include shadow-dom.host-aware() {
     @include ripple-theme.theme(
       (
         state: map.get($theme, ripple-checked-color),

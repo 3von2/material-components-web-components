@@ -19,6 +19,12 @@ limitations under the License.
 // stylelint-disable function-name-case
 @use 'sass:map';
 
+$default-ripple-opacity: (
+      hover: 0.04,
+      press: 0.12,
+      focus: 0.12,
+    );
+
 $transparent-theme: (
   state: #000,
   opacity: (
